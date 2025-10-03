@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hatem Kthiri - Full Stack JS Developer</title>
+    <meta
+      name="description"
+      content="Gomycode Instructor & Full Stack JS Developer specializing in modern web applications"
+    />
+    <meta name="author" content="Hatem Kthiri" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Hatem Kthiri - Full Stack JS Developer"
+    />
+    <meta
+      property="og:description"
+      content="Gomycode Instructor & Full Stack JS Developer specializing in modern web applications"
+    />
+    <meta property="og:type" content="website" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+      }
+
+      /* Hero Gradient Background */
+      .hero-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        background: linear-gradient(
+          135deg,
+          hsl(220, 30%, 6%) 0%,
+          hsl(220, 25%, 10%) 50%,
+          hsl(195, 40%, 12%) 100%
+        );
+      }
+
+      .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      /* Typography */
+      .hero-title {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 24px;
+        color: hsl(210, 40%, 98%);
+        text-shadow: 0 0 30px hsla(195, 85%, 55%, 0.5);
+        animation: fadeIn 0.8s ease-out forwards;
+      }
+
+      .hero-subtitle {
+        font-size: 1.5rem;
+        color: hsl(215, 20%, 65%);
+        margin-bottom: 48px;
+        max-width: 672px;
+        margin-left: auto;
+        margin-right: auto;
+        animation: fadeIn 0.8s ease-out 0.2s forwards;
+        opacity: 0;
+      }
+
+      /* Button Styles */
+      .cta-button-wrapper {
+        animation: fadeIn 0.8s ease-out 0.4s forwards;
+        opacity: 0;
+      }
+
+      .cta-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background-color: hsl(195, 85%, 55%);
+        color: hsl(220, 25%, 8%);
+        padding: 20px 40px;
+        border-radius: 12px;
+        font-size: 1.125rem;
+        font-weight: 600;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .cta-button:hover {
+        background-color: hsl(195, 85%, 60%);
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px hsla(195, 85%, 55%, 0.5);
+      }
+
+      .cta-button:active {
+        transform: scale(0.98);
+      }
+
+      /* Arrow Icon */
+      .arrow-icon {
+        width: 20px;
+        height: 20px;
+        transition: transform 0.3s ease;
+      }
+
+      .cta-button:hover .arrow-icon {
+        transform: translateX(4px);
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .hero-title {
+          font-size: 3rem;
+        }
+
+        .hero-subtitle {
+          font-size: 1.25rem;
+        }
+
+        .cta-button {
+          font-size: 1rem;
+          padding: 16px 32px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .hero-title {
+          font-size: 6rem;
+        }
+
+        .hero-subtitle {
+          font-size: 1.875rem;
+        }
+
+        /* Spacing between title and subtitle */
+        .hero-title {
+          margin-bottom: 32px; /* was 24px */
+        }
+
+        /* CTA button color */
+        .cta-button {
+          background-color: hsl(265, 85%, 65%); /* was hsl(195, 85%, 55%) */
+        }
+
+        .cta-button:hover {
+          background-color: hsl(265, 85%, 70%); /* was hsl(195, 85%, 60%) */
+          box-shadow: 0 10px 25px hsla(265, 85%, 65%, 0.5); /* match new hue */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="hero-section">
+      <div class="container">
+        <h1 class="hero-title">Hatem Kthiri</h1>
+
+        <p class="hero-subtitle">
+          Gomycode Instructor & Full Stack JS Developer
+        </p>
+
+        <div class="cta-button-wrapper">
+          <a href="#" class="cta-button">
+            View My Projects
+            <svg
+              class="arrow-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
